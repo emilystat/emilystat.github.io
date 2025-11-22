@@ -348,6 +348,98 @@ The expandable author feature is built into `_layouts/bib.liquid` (lines 62-96):
 - Shows all hidden authors on click with typewriter animation
 - No code changes needed - controlled entirely by config value
 
+## Papers Added - Fourth Batch (2009-2016)
+
+### Summary:
+Added 15 papers from 2009-2016 covering climate science, spatial statistics, remote sensing, and computational methods.
+
+### Papers by Year:
+
+#### 2016 (1 paper):
+1. **Cressie & Kang - Climate-Change Projections**
+   - Journal: Mathematical Geosciences, 48, 107-121
+   - DOI: 10.1007/s11004-015-9607-9
+
+#### 2015 (2 papers):
+2. **Ren et al. - Metabolomics Data Analysis**
+   - Authors: Ren, S., Hinzman, A. A., Kang, Emily L., Szczesniak, R. D., Lu, L. J.
+   - Journal: Metabolomics, 11, 1492-1513
+   - DOI: 10.1007/s11306-015-0823-6
+
+3. **Zhu et al. - Satellite SST Fixed Rank Kriging**
+   - Authors: Zhu, Yuxin, Kang, Emily L., Bo, Yanchen, Tang, Qingxin, Cheng, Jin, He, Yuxiang
+   - Journal: IEEE Transactions on Geoscience and Remote Sensing, 53(9), 5021-5035
+   - DOI: 10.1109/TGRS.2015.2416351
+
+#### 2013 (3 papers):
+4. **Kang & Cressie - NARCCAP Climate ANOVA**
+   - Journal: International Journal of Applied Earth Observation and Geoinformation, 22, 3-15
+   - DOI: 10.1016/j.jag.2011.12.007
+
+5. **Ojiambo & Kang - Cucurbit Downy Mildew Spatial Frailties**
+   - Journal: Phytopathology, 103(3), 216-227
+   - DOI: 10.1094/PHYTO-07-12-0152-R
+
+6. **Kang et al. - Regression Models for Turbulent Systems**
+   - Authors: Kang, Emily L., Harlim, John, Majda, Andrew J.
+   - Journal: Communications in Mathematical Sciences, 11(2), 481-498
+   - DOI: 10.4310/cms.2013.v11.n2.a8
+
+#### 2012 (3 papers):
+7. **Kang & Harlim - Filtering Nonlinear Spatio-Temporal Chaos**
+   - Journal: Physica D: Nonlinear Phenomena, 241(12), 1099-1113
+   - DOI: 10.1016/j.physd.2012.03.003
+
+8. **Kang et al. - NARCCAP Bayesian Hierarchical Model**
+   - Authors: Kang, Emily L., Cressie, Noel, Sain, Stephan R.
+   - Journal: Journal of the Royal Statistical Society Series C, 61(2), 291-313
+   - DOI: 10.1111/j.1467-9876.2011.01010.x
+
+9. **Kang & Harlim - Multiscale Filtering with HMM**
+   - Journal: Monthly Weather Review, 140, 860-873
+   - DOI: 10.1175/MWR-D-10-05067.1
+
+#### 2011 (1 paper):
+10. **Kang & Cressie - Spatial Random Effects Model**
+    - Journal: Journal of the American Statistical Association, 106(495), 972-983
+    - DOI: 10.1198/jasa.2011.tm09680
+
+#### 2010 (3 papers):
+11. **Kang et al. - Temporal Variability for Spatial Mapping**
+    - Authors: Kang, Emily L., Cressie, Noel, Shi, Tao
+    - Journal: Canadian Journal of Statistics, 38, 271-289
+    - DOI: 10.1002/cjs.10063
+
+12. **Cressie & Kang - Digital Soil Mapping (Book Chapter)**
+    - Book: Proximal Soil Sensing (Progress in Soil Science series)
+    - Publisher: Springer, Dordrecht
+    - Pages: 49-63
+    - DOI: 10.1007/978-90-481-8859-8_4
+
+13. **Cressie et al. - Fixed Rank Filtering**
+    - Authors: Cressie, Noel, Shi, Tao, Kang, Emily L.
+    - Journal: Journal of Computational and Graphical Statistics, 19(3), 724-745
+    - DOI: 10.1198/jcgs.2010.09051
+
+#### 2009 (2 papers):
+14. **Kang et al. - Small-Area Data Analysis**
+    - Authors: Kang, Emily L., Liu, Desheng, Cressie, Noel
+    - Journal: Computational Statistics & Data Analysis, 53(8), 3016-3032
+    - DOI: 10.1016/j.csda.2008.07.033
+
+15. **Morton et al. - Smoothing Splines**
+    - Authors: Morton, R., Kang, Emily L., Henderson, B. L.
+    - Journal: Environmetrics, 20, 249-259
+    - DOI: 10.1002/env.925
+
+### Key Features:
+- **Consistent author name format**: "Emily L. Kang" throughout all entries
+- **Complete author lists**: Full names for all co-authors (no "et al.")
+- **Comprehensive bibliographic info**: Volumes, numbers, pages, publishers
+- **DOI and HTML links**: Included for all papers
+- **Entry types**: Includes @article, @inproceedings, and @incollection for book chapter
+- **All categorized as published**: `category={published}` field for reverse chronological display
+
 ## Notes
 - Keep existing blog files intact, just hidden from navigation
 - Maintain jekyll-scholar plugin functionality
