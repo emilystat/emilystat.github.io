@@ -11,12 +11,6 @@ nav_order: 2
 
 <div class="publications">
 
-<h2>Manuscripts</h2>
-
-{% bibliography --query @*[category=manuscript]* %}
-
-<h2>Published Work</h2>
-
-{% bibliography --query @*[category=published]* %}
+{% bibliography %}
 
 </div>
