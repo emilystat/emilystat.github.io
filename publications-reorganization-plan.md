@@ -440,6 +440,40 @@ Added 15 papers from 2009-2016 covering climate science, spatial statistics, rem
 - **Entry types**: Includes @article, @inproceedings, and @incollection for book chapter
 - **All categorized as published**: `category={published}` field for reverse chronological display
 
+## Publications Page Display Update (Final)
+
+### Change Made:
+Removed separate "Manuscripts" and "Published Work" section headers from publications page. Now displays all publications in a single unified list in reverse chronological order.
+
+### Modified File:
+- `_pages/publications.md` - Changed from sectioned display to unified bibliography display
+
+### Previous Structure (Removed):
+```liquid
+<h2>Manuscripts</h2>
+{% bibliography --query @*[category=manuscript]* %}
+
+<h2>Published Work</h2>
+{% bibliography --query @*[category=published]* %}
+```
+
+### Current Structure:
+```liquid
+<div class="publications">
+{% bibliography %}
+</div>
+```
+
+### Rationale:
+1. **Cleaner presentation** - Single unified list is simpler and more streamlined
+2. **Strong publication record** - With 40+ publications from 2009-2025, published work dominates
+3. **Reduced maintenance** - No need to recategorize when manuscript status changes
+4. **Self-evident status** - Journal names, years, and DOIs indicate publication status
+5. **Standard for senior faculty** - Common practice for established researchers to display all work together
+
+### Result:
+All publications now appear in reverse chronological order (newest first) without section divisions. The bibliography automatically sorts by year, showing the most recent work at the top.
+
 ## Notes
 - Keep existing blog files intact, just hidden from navigation
 - Maintain jekyll-scholar plugin functionality
@@ -447,3 +481,4 @@ Added 15 papers from 2009-2016 covering climate science, spatial statistics, rem
 - Papers can have `selected={true}` field for potential featured display elsewhere
 - Venue abbreviations can still use `_data/venues.yml` for color coding if desired
 - To show all authors always (no limit), set `max_author_limit:` to blank in `_config.yml`
+- Category field in BibTeX entries (manuscript/published) no longer affects display but can be retained for reference
