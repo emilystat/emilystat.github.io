@@ -307,9 +307,46 @@ Plan allows for easy addition of more papers by:
 - HTML and DOI fields only included when valid links are available
 - Papers automatically sorted by year (descending) within Published Work section
 
+## Papers Added - Third Batch (2017-2020)
+
+### Summary:
+Added 17 papers from 2017-2020 covering:
+- 2020: 6 papers (fused GP, ECOSTRESS, hexagonal grids, bus stop analysis, MCEN, MODIS/AMSR-E fusion)
+- 2019: 6 papers (randomized ML, spatial downscaling, chlorophyll retrieval, hierarchical Bayesian SST, NNGP, additive GP)
+- 2018: 2 papers (Mammoth Mountain ecosystem, MODIS snow products)
+- 2017: 2 papers (spatial data fusion for non-Gaussian data, NNGP book chapter)
+
+All entries include complete author lists, DOI and HTML links where available.
+
+## Author Display Configuration
+
+### Current Setting (Updated):
+- **max_author_limit: 7** (changed from 3)
+- Configuration file: `_config.yml` line 327
+- Behavior:
+  - Papers with ≤7 authors: All authors displayed
+  - Papers with >7 authors: First 7 authors shown, then clickable "X more author(s)" link
+  - Clicking the link expands to show all remaining authors with animation
+  - Animation delay: 10ms (configurable via `more_authors_animation_delay`)
+
+### Rationale:
+- Shows complete author lists for most papers (majority have ≤7 authors)
+- Maintains expandable feature for papers with very long author lists (e.g., 12-14 authors)
+- Provides better visibility than previous limit of 3 authors
+- Balances readability with completeness
+
+### Implementation:
+The expandable author feature is built into `_layouts/bib.liquid` (lines 62-96):
+- Automatically calculates number of hidden authors
+- Generates clickable span with "X more author(s)" text
+- Handles singular/plural ("1 more author" vs "2 more authors")
+- Shows all hidden authors on click with typewriter animation
+- No code changes needed - controlled entirely by config value
+
 ## Notes
 - Keep existing blog files intact, just hidden from navigation
 - Maintain jekyll-scholar plugin functionality
 - Use existing theme capabilities (no custom plugins needed)
 - Papers can have `selected={true}` field for potential featured display elsewhere
 - Venue abbreviations can still use `_data/venues.yml` for color coding if desired
+- To show all authors always (no limit), set `max_author_limit:` to blank in `_config.yml`
