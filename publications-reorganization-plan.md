@@ -1,0 +1,315 @@
+# Publications Page Reorganization Plan
+
+## Overview
+Reorganize the publications page to display two distinct sections: **Manuscripts** and **Published Work**, with simplified button displays (PDF, HTML, DOI only) and no metrics.
+
+## Current State
+
+### Website Structure
+- Theme: al-folio (Jekyll-based academic theme)
+- Navigation: Automatically generated from pages with `nav: true` in front matter
+- Publications: Currently displayed using jekyll-scholar plugin from `_bibliography/papers.bib`
+- Current publications page: `_pages/publications.md`
+- Bibliography layout: `_layouts/bib.liquid`
+
+### Navigation Items (by nav_order)
+1. About (home) - `/`
+2. Publications - `/publications/` (nav_order: 2)
+3. Projects - `/projects/` (nav_order: 3)
+4. CV - `/cv/` (nav_order: 5)
+5. Teaching - `/teaching/` (nav_order: 6)
+6. Submenus (dropdown) - (nav_order: 8)
+7. Blog - `/blog/` (currently visible, to be hidden)
+
+## Objectives
+
+### 1. Navigation Changes
+- **Keep**: About, Publications, Projects, CV, Teaching, People, and other default tabs
+- **Hide**: Blog from navigation (keep files, just remove from nav)
+- **Action**: Set `nav: false` in `_pages/blog.md`
+
+### 2. Publications Page Structure
+Reorganize into two sections:
+
+#### Section 1: Manuscripts (Preprints/Submitted)
+Display papers that are not yet published in peer-reviewed venues.
+
+**Papers to include:**
+1. **PPD-CPP Paper**
+   - Title: "PPD-CPP: Pointwise predictive density calibrated-power prior in dynamically borrowing historical information"
+   - Authors: Shixuan Wang, Jing Zhang, Emily L. Kang, Bin Zhang
+   - Date: September 30, 2025
+   - arXiv: 2509.25688
+   - DOI: 10.48550/arXiv.2509.25688
+   - URL: https://arxiv.org/abs/2509.25688
+
+#### Section 2: Published Work (Peer-Reviewed Publications)
+Display papers in reverse chronological order (latest first).
+
+**Papers to include (in order):**
+
+1. **JRSS-C Paper (November 2025)** - Most Recent
+   - Title: "A multivariate spatial statistical model for statistical downscaling of sea surface temperature in the Great Barrier Reef region"
+   - Authors: Ayesha Ekanayaka, Emily L Kang, Amy Braverman, Peter Kalmus
+   - Journal: Journal of the Royal Statistical Society Series C: Applied Statistics
+   - Volume: 74, Issue 4
+   - Date: November 2025
+   - Pages: 1183–1213
+   - DOI: 10.1093/jrsssc/qlaf019
+   - URL: https://academic.oup.com/jrsssc/advance-article-abstract/doi/10.1093/jrsssc/qlaf019/8096399
+
+2. **Stat Paper (March 2025)** - Older
+   - Title: "A Practical Tool for Visualizing and Measuring Model Selection Uncertainty"
+   - Authors: Ren et al. (2025) [Need to verify if Emily L. Kang is co-author]
+   - Journal: Stat (Wiley)
+   - Date: March 12, 2025
+   - DOI: 10.1002/sta4.70056
+   - URL: https://onlinelibrary.wiley.com/doi/abs/10.1002/sta4.70056
+
+### 3. Display Requirements
+
+#### Remove:
+- Preview images/figures
+- Metrics badges (Altmetric, Dimensions, Google Scholar, Inspire HEP)
+- Abstract previews
+- BibTeX show button
+
+#### Keep Only:
+- Paper title
+- Authors
+- Journal/venue information
+- Publication date
+- Three buttons (left to right):
+  1. **PDF** - Link to PDF version
+  2. **HTML** - Link to HTML/online version
+  3. **DOI** - Link to DOI
+
+## Implementation Plan
+
+### Step 1: Hide Blog from Navigation
+**File to modify:** `emilystat.github.io/_pages/blog.md`
+
+**Change:**
+```yaml
+nav: true  →  nav: false
+```
+
+### Step 2: Create BibTeX Entries
+**File to modify:** `emilystat.github.io/_bibliography/papers.bib`
+
+**Add entries for:**
+1. PPD-CPP paper (arXiv) - category: manuscript
+2. JRSS-C paper - category: published
+3. Stat paper - category: published
+
+**BibTeX format with custom fields:**
+```bibtex
+@article{key,
+  title = {...},
+  author = {...},
+  journal = {...},
+  year = {...},
+  volume = {...},
+  pages = {...},
+  doi = {...},
+  html = {...},
+  pdf = {...},
+  category = {published|manuscript},
+  selected = {false}
+}
+```
+
+### Step 3: Modify Publications Page
+**File to modify:** `emilystat.github.io/_pages/publications.md`
+
+**Approach:** Use jekyll-scholar filtering with custom category field
+
+**New structure:**
+```liquid
+---
+layout: page
+permalink: /publications/
+title: publications
+description:
+nav: true
+nav_order: 2
+---
+
+## Manuscripts
+
+{% bibliography --query @*[category=manuscript]* %}
+
+## Published Work
+
+{% bibliography --query @*[category=published]* %}
+```
+
+### Step 4: Customize Bibliography Display
+**File to modify:** `emilystat.github.io/_layouts/bib.liquid`
+
+**Changes needed:**
+1. Remove/hide preview images
+2. Remove metrics badges sections
+3. Keep only PDF, HTML, DOI buttons
+4. Ensure buttons appear in correct order (PDF, HTML, DOI from left to right)
+
+**OR**
+
+Create a new simplified layout `bib_simple.liquid` and use it specifically for the publications page.
+
+### Step 5: Configure Button Display Order
+Ensure the button display order in the bibliography layout follows:
+1. PDF (if `pdf` field exists)
+2. HTML (if `html` field exists)
+3. DOI (always, from doi field)
+
+### Step 6: Test Locally
+1. Build site: `bundle exec jekyll serve`
+2. Verify:
+   - Blog not in navigation
+   - Publications page has two sections
+   - Papers appear in correct sections
+   - Only PDF, HTML, DOI buttons show
+   - No metrics/badges
+   - Buttons in correct order
+
+## Files to Create/Modify
+
+### To Modify:
+1. `emilystat.github.io/_pages/blog.md` - Hide from nav
+2. `emilystat.github.io/_bibliography/papers.bib` - Add new entries
+3. `emilystat.github.io/_pages/publications.md` - Reorganize structure
+4. `emilystat.github.io/_layouts/bib.liquid` - Simplify display
+
+### Optional to Create:
+- `emilystat.github.io/_layouts/bib_simple.liquid` - Simplified bibliography layout (if needed)
+
+## Data Needed
+
+### For Wiley Paper (Stat 2025):
+- Full author list (verify if Emily L. Kang is co-author)
+- PDF link
+- HTML link (already have: https://onlinelibrary.wiley.com/doi/abs/10.1002/sta4.70056)
+
+### For arXiv Paper:
+- PDF link: https://arxiv.org/pdf/2509.25688
+- HTML link: https://arxiv.org/abs/2509.25688
+
+### For JRSS-C Paper:
+- PDF link (need to obtain)
+- HTML link: https://academic.oup.com/jrsssc/advance-article-abstract/doi/10.1093/jrsssc/qlaf019/8096399
+
+## Future Additions
+Plan allows for easy addition of more papers by:
+1. Adding BibTeX entry to `papers.bib` with appropriate category
+2. Papers automatically appear in correct section
+3. Sorted by year within each section
+
+## Papers Added - Second Batch (2021-2024)
+
+### Key Features:
+- **Complete author lists** - No "et al." abbreviations; all authors fully listed
+- **Consistent formatting** - All entries follow same BibTeX structure with standardized fields
+- **Conditional buttons** - HTML and DOI buttons only appear when links are available
+- **All papers categorized as "published"** - Appear in Published Work section in reverse chronological order
+
+### 2024 (2 papers):
+
+1. **Lee et al. - EcoPro: Ecological Projection Digital Twin**
+   - Authors: Seungwon Lee, Peter Kalmus, Antonio Ferraz, Alex Goodman, Kyle Pearson, Gary Doran, Flynn Platt, Beichen Hu, Ayesha Ekanayaka, Sudip Chakraborty, Emily L. Kang, Jia Zhang, Sierra Dahiyat, Kyle Cavanaugh (14 authors)
+   - Conference: IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium
+   - Pages: 2311-2314
+   - Location: Athens, Greece
+   - DOI: 10.1109/IGARSS53475.2024.10640554
+   - HTML: https://ieeexplore.ieee.org/document/10640554
+   - Entry type: @inproceedings
+
+2. **Cheng et al. - Recursive nearest neighbor co-kriging models**
+   - Authors: Si Cheng, Bledar A. Konomi, Georgios Karagiannis, Emily L. Kang
+   - Journal: Environmetrics, 35(4), e2844
+   - DOI: 10.1002/env.2844
+   - HTML: https://onlinelibrary.wiley.com/doi/abs/10.1002/env.2844
+   - Entry type: @article
+
+### 2023 (1 paper):
+
+3. **Konomi et al. - Bayesian Latent Variable Co-kriging Model**
+   - Authors: Bledar A. Konomi, Emily L. Kang, Abeer Almomani, Jonathan Hobbs, Claire Gilroy, Sudipto Ghosh
+   - Journal: Journal of Agricultural, Biological and Environmental Statistics, 28, 423-441
+   - DOI: 10.1007/s13253-023-00530-9
+   - HTML: https://link.springer.com/article/10.1007/s13253-023-00530-9
+   - Entry type: @article
+
+### 2022 (3 papers):
+
+4. **Yang et al. - Traffic restrictions during the 2008 Olympic Games**
+   - Authors: Bo Yang, Hongxing Liu, Emily L. Kang, Song Shu, Min Xu, Bin Wu, Richard A. Beck, Kenneth M. Hinkel, Bailang Yu
+   - Journal: Communications Earth & Environment, 3, 105
+   - DOI: 10.1038/s43247-022-00427-4
+   - HTML: https://www.nature.com/articles/s43247-022-00427-4
+   - Entry type: @article
+
+5. **Kalmus et al. - Past the precipice? Projected coral habitability**
+   - Authors: Peter Kalmus, Ayesha Ekanayaka, Emily L. Kang, Mark Baird, Michelle Gierach
+   - Journal: Earth's Future, 10, e2021EF002608
+   - DOI: 10.1029/2021EF002608
+   - HTML: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2021EF002608
+   - Entry type: @article
+
+6. **Ekanayaka et al. - Statistical Downscaling of Sea Surface Temperature**
+   - Authors: Ayesha Ekanayaka, Peter Kalmus, Emily L. Kang, Amy Braverman
+   - Conference: Workshop on Gaussian Processes, Spatiotemporal Modeling, and Decision-Making Systems (GPSMDMS) at NeurIPS 2022
+   - Note: No DOI or HTML link available (workshop paper)
+   - Entry type: @inproceedings
+
+### 2021 (5 papers):
+
+7. **Cheng et al. - Hierarchical Bayesian nearest neighbor co-kriging**
+   - Authors: Si Cheng, Bledar A. Konomi, Jessica L. Matthews, Georgios Karagiannis, Emily L. Kang
+   - Journal: Spatial Statistics, 44, 100516
+   - DOI: 10.1016/j.spasta.2021.100516
+   - HTML: https://www.sciencedirect.com/science/article/abs/pii/S2211675321000270
+   - Entry type: @article
+
+8. **Ma et al. - Computer Model Emulation with High-Dimensional Functional Output**
+   - Authors: Pulong Ma, Anirban Mondal, Bledar A. Konomi, Jonathan Hobbs, Joon Jin Song, Emily L. Kang
+   - Journal: Technometrics, 64(1), 65-79
+   - DOI: 10.1080/00401706.2021.1895890
+   - HTML: https://www.tandfonline.com/doi/full/10.1080/00401706.2021.1895890
+   - Entry type: @article
+
+9. **Yang et al. - Spatio-temporal Cokriging method**
+   - Authors: Bo Yang, Hongxing Liu, Emily L. Kang, Song Shu, Min Xu, Bin Wu, Richard A. Beck, Kenneth M. Hinkel, Bailang Yu
+   - Journal: Remote Sensing of Environment, 255, 112190
+   - DOI: 10.1016/j.rse.2020.112190
+   - HTML: https://www.sciencedirect.com/science/article/abs/pii/S0034425720300122
+   - Entry type: @article
+
+10. **Kang et al. - Modeling Large Multivariate Spatial Data**
+    - Authors: Emily L. Kang, Miaoqi Li, Kerry Cawse-Nicholson, Amy Braverman
+    - Journal: Journal of the Indian Statistical Association, 59(2)
+    - Note: No HTML link available
+    - Entry type: @article
+
+11. **Shu et al. - Improving Satellite Waveform Altimetry Measurements**
+    - Authors: Song Shu, Hongxing Liu, Frédéric Frappart, Emily L. Kang, Bo Yang, Min Xu, Yan Huang, Bo Wu, Bailang Yu, Shuanggen Wang, Richard A. Beck, Kenneth M. Hinkel (12 authors)
+    - Journal: IEEE Transactions on Geoscience and Remote Sensing, 59(6), 4733-4748
+    - DOI: 10.1109/TGRS.2020.3010184
+    - HTML: https://ieeexplore.ieee.org/document/9153046
+    - Entry type: @article
+
+### Implementation Notes:
+- All papers added with `category={published}` field
+- Full author names preserved (no "et al." or name truncation)
+- LaTeX special character for Frédéric Frappart: `Fr\'ed\'eric`
+- Conference papers use `@inproceedings` with `booktitle` field
+- Journal papers use `@article` with `journal`, `volume`, `pages` fields
+- HTML and DOI fields only included when valid links are available
+- Papers automatically sorted by year (descending) within Published Work section
+
+## Notes
+- Keep existing blog files intact, just hidden from navigation
+- Maintain jekyll-scholar plugin functionality
+- Use existing theme capabilities (no custom plugins needed)
+- Papers can have `selected={true}` field for potential featured display elsewhere
+- Venue abbreviations can still use `_data/venues.yml` for color coding if desired
