@@ -28,7 +28,12 @@ Reorganize the publications page to display two distinct sections: **Manuscripts
 - **Hide**: Blog from navigation (keep files, just remove from nav)
 - **Action**: Set `nav: false` in `_pages/blog.md`
 
-### 2. Publications Page Structure
+### 2. Home Page Changes
+- **Remove**: Selected publications section from home/about page
+- **Action**: Set `selected_papers: false` in `_pages/about.md` (line 16)
+- **Rationale**: Publications are accessible through dedicated Publications page; no need for duplication on home page
+
+### 3. Publications Page Structure
 Reorganize into two sections:
 
 #### Section 1: Manuscripts (Preprints/Submitted)
@@ -66,7 +71,7 @@ Display papers in reverse chronological order (latest first).
    - DOI: 10.1002/sta4.70056
    - URL: https://onlinelibrary.wiley.com/doi/abs/10.1002/sta4.70056
 
-### 3. Display Requirements
+### 4. Display Requirements
 
 #### Remove:
 - Preview images/figures
