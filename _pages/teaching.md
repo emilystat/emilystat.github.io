@@ -12,10 +12,10 @@ nav_order: 4
 **Fall 2025**
 
 - **STAT 4131 - Regression Analysis and Statistical Learning** (Undergraduate)
-  [Course Website](https://uc.instructure.com) | [Syllabus (PDF)](/assets/pdf/STAT4131_Fall2025_syllabus.pdf)
+  [Course Website](https://uc.instructure.com) | [Syllabus (PDF)](/assets/pdf/STAT4131_Fall2025_syllabus.pdf){:target="_blank" rel="noopener noreferrer"}
 
 - **STAT 5145/6045 - Statistical Computing** (Combined Undergraduate/Graduate)
-  [Course Website](https://uc.instructure.com) | [Syllabus (PDF)](/assets/pdf/STAT6045-5145-Fall2025-syllabus.pdf)
+  [Course Website](https://uc.instructure.com) | [Syllabus (PDF)](/assets/pdf/STAT6045-5145-Fall2025-syllabus.pdf){:target="_blank" rel="noopener noreferrer"}
 
 ## Past Courses
 
