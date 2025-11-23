@@ -586,6 +586,135 @@ children:
 - GitHub Actions deployment: Successful (Build: 1m21s, Deploy: 9s)
 - Live at: https://emilystat.github.io/
 
+## Projects Page Implementation (Completed)
+
+**Date:** November 23, 2025
+
+### Objective:
+Create a projects landing page that can list multiple grants, with individual project pages for each grant. First project added: NSF DMS-2053668.
+
+### Files Created:
+
+#### 1. Projects Landing Page
+- **File:** `_pages/projects.md`
+- **Permalink:** `/projects/`
+- **Layout:** `page`
+- **Navigation:** `nav: false` (accessible only via Research dropdown)
+- **Purpose:** Lists all current and past research projects/grants with brief summaries and links to individual project pages
+
+#### 2. Individual Project Page
+- **File:** `_pages/nsf-dms-2053668.md`
+- **Permalink:** `/projects/nsf-dms-2053668/`
+- **Layout:** `page`
+- **Navigation:** `nav: false`
+- **Grant:** NSF DMS-2053668 (2021-2025)
+- **Title:** "Inference and Uncertainty Quantification for High Dimensional Systems in Remote Sensing: Methods, Computation, and Applications"
+
+#### 3. Offline Content Draft File
+- **File:** `/Users/Emily_1/claude-emily/emily-website/nsf-dms-2053668-content-draft.md`
+- **Purpose:** Template for organizing project content offline before adding to website
+- **Location:** Outside git repository for user's offline editing
+
+### Project Page Structure:
+
+**Section 1: Overview**
+- 3-paragraph description of the project (from NSF abstract)
+- Grant Information box with:
+  - Funding Agency: National Science Foundation
+  - Program: Division of Mathematical Sciences
+  - Award Number with link to NSF award page
+  - Period: 2021-2025
+  - PI: Emily L. Kang
+  - Type: Collaborative Research
+
+**Section 2: Publications**
+- Placeholder for publications from this grant
+- Will use same bibliography display as publications page (HTML/DOI buttons)
+- Can reference papers from `_bibliography/papers.bib` by citation key
+
+**Section 3: Software**
+- Placeholder for GitHub repositories and software tools
+- Ready to add open-source software developed under this grant
+
+**Section 4: Course Materials**
+- Placeholder for course information and PDF materials
+- Will include syllabus PDFs and other course materials supported by grant
+
+**Section 5: Presentations**
+- Placeholder for presentation details and PDF links
+- Format: Title - Venue, Location, Date with context and PDF slides
+
+**Section 6: Team**
+- PI: Emily L. Kang, University of Cincinnati
+- Collaborators: To be added
+- Students Supported: To be added
+
+### Navigation Integration:
+
+**Modified File:** `_pages/dropdown.md`
+
+**Change:** Added projects to Research dropdown menu
+
+**Current Research Dropdown Structure:**
+```yaml
+children:
+  - title: people
+    permalink: /people/
+  - title: projects
+    permalink: /projects/
+  - title: repositories
+    permalink: /repositories/
+```
+
+**Navigation Hierarchy:**
+- Research (dropdown, nav_order: 5)
+  - people
+  - projects ← NEW
+  - repositories
+
+### Design Features:
+
+1. **Scalable Structure:**
+   - Landing page can accommodate multiple projects
+   - Each project gets its own dedicated page
+   - Consistent structure across all project pages
+
+2. **Content Flexibility:**
+   - Sections use HTML comments as placeholders
+   - Easy to add content incrementally
+   - Compatible with existing bibliography system
+
+3. **Future-Ready:**
+   - Template established for adding more grants
+   - Offline draft file provides structured content collection
+   - Consistent with overall website design (al-folio theme)
+
+### Content Status:
+
+**Completed:**
+- ✅ Overview section with full NSF abstract summary
+- ✅ Grant information box with NSF award link
+- ✅ All section placeholders created
+
+**To Be Added (via offline draft file):**
+- Publications list (will reference bibliography entries)
+- GitHub repositories/software tools
+- Course materials (PDFs to upload to `assets/pdf/`)
+- Presentation details (PDFs to upload to `assets/pdf/`)
+- Team members (collaborators and students supported)
+
+### Deployment:
+- **Committed:** "Add projects page with NSF DMS-2053668 grant"
+- **Commit:** 66a784f8
+- **Pushed to GitHub:** November 23, 2025
+- **Live URL:** https://emilystat.github.io/projects/
+
+### Next Steps:
+1. User fills in offline draft file with project content
+2. Upload any PDF files to `assets/pdf/` directory
+3. Copy organized content from draft file to `_pages/nsf-dms-2053668.md`
+4. Add future grants by creating new project pages and adding entries to landing page
+
 ## Notes
 - Keep existing blog files intact, just hidden from navigation
 - Maintain jekyll-scholar plugin functionality
