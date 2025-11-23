@@ -37,6 +37,8 @@ nav: false
 | Ahmad Ali Hanandeh (Joint with B. A. Konomi) | 2017 | Assistant Professor, Yarmouk University, Jordan | |
 | Hongxiang Shi | 2017 | Fifth Third Bank | |
 
+---
+
 ### Undergraduate Alumni
 
 | Name | Graduation Year | First Position |
