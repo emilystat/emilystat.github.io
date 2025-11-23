@@ -2,11 +2,30 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Courses taught at the University of Cincinnati
 nav: true
 nav_order: 4
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Current Courses
 
-Organize your courses by years, topics, or universities, however you like!
+**Fall 2025**
+
+- **STAT 4131 - Regression Analysis and Statistical Learning** (Undergraduate)
+  [Course Website](https://uc.instructure.com) | [Syllabus (PDF)](/assets/pdf/STAT4131_Fall2025_syllabus.pdf)
+
+- **STAT 5145/6045 - Statistical Computing** (Combined Undergraduate/Graduate)
+  [Course Website](https://uc.instructure.com) | [Syllabus (PDF)](/assets/pdf/STAT6045-5145-Fall2025-syllabus.pdf)
+
+## Past Courses
+
+- STAT 5132/6032 Design & Analysis of Experiments
+- STAT 6031 Applied Regression Analysis
+- STAT 7024 Linear Models II
+- STAT 7020 Applied Spatial Statistics
+- STAT 8025 Spatial Statistics
+- STAT 7020 Applied Longitudinal Data Analysis
+- STAT 8024 Advanced Statistical Modeling
+- STAT 7021 Linear Models I
+- STAT 2037 Probability & Statistics I
+- STAT 3038 Probability & Statistics II
