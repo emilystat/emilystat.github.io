@@ -871,6 +871,90 @@ The NSF project page now provides complete information about the research team, 
 
 ---
 
+## NSF Project Page Team Structure Update (Completed)
+
+**Date:** November 23, 2025
+
+### Objective:
+Update the Team section on NSF DMS-2053668 project page to reflect correct PI structure, titles, and student roster.
+
+### Changes Made:
+
+**File Modified:** `_pages/nsf-dms-2053668.md`
+
+**Section Updated:** Team (lines 86-108)
+
+### Team Structure Changes:
+
+#### 1. Principal Investigators (Updated to Plural)
+**Previous:**
+- Section title: "Principal Investigator" (singular)
+- Listed: Emily L. Kang only
+
+**Current:**
+- Section title: "Principal Investigators" (plural)
+- Listed:
+  1. **Emily L. Kang**, Professor (updated from Associate Professor), Division of Statistics and Data Science, University of Cincinnati
+  2. **Guang Lin** (NEW), Professor, Department of Mathematics, Purdue University
+     - Link: https://www.math.purdue.edu/people/bio/lin491
+
+#### 2. Co-Principal Investigator Section (NEW)
+- **Bledar A. Konomi** (moved from Collaborators)
+  - Associate Professor, Division of Statistics and Data Science, University of Cincinnati
+  - Link: https://researchdirectory.uc.edu/p/konomibr
+
+#### 3. Collaborators Section
+Remains the same with:
+- Amy Braverman (JPL)
+- Jonathan Hobbs (JPL)
+- Peter Kalmus (JPL/NASA)
+- Georgios Karagiannis (Durham University, UK)
+- Kerry Cawse-Nicholson (JPL/NASA)
+
+#### 4. Students Supported (Updated)
+**Added two new students:**
+- **Ying Zhang**, Ph.D. student (2024-present), University of Cincinnati
+- **Lloyd Goldstein**, Ph.D. student (2024-present), University of Cincinnati
+
+**Complete student roster (6 total):**
+1. Ayesha Kumari Ekanayaka Katugoda Gedara - Ph.D. 2024 (graduated, now postdoc at UNC Chapel Hill)
+2. Rick Lucas - Ph.D. student (2021-present)
+3. Eric Herrison Gyamfi - Ph.D. student (2022-present)
+4. Hancheng Li - Ph.D. student (2022-present, Joint with B. A. Konomi)
+5. Ying Zhang - Ph.D. student (2024-present) ← NEW
+6. Lloyd Goldstein - Ph.D. student (2024-present) ← NEW
+
+### Research Sources:
+- **Guang Lin information** gathered via WebSearch:
+  - Position: Associate Dean for Research & Innovation, Professor
+  - Departments: Mathematics and Mechanical Engineering (with Statistics affiliation)
+  - Institution: Purdue University West Lafayette
+  - Profile URL: https://www.math.purdue.edu/people/bio/lin491
+
+### Key Updates Summary:
+1. ✅ Changed "Principal Investigator" → "Principal Investigators" (plural)
+2. ✅ Updated Emily L. Kang's title: Associate Professor → Professor
+3. ✅ Added Guang Lin as co-PI from Purdue University
+4. ✅ Created new "Co-Principal Investigator" section
+5. ✅ Moved Bledar A. Konomi to Co-PI section (from Collaborators)
+6. ✅ Added Ying Zhang and Lloyd Goldstein to Students Supported list
+
+### Deployment:
+- **Committed:** "Update NSF project page: add PI Guang Lin, update team structure"
+- **Commit:** 165b8a79
+- **Pushed to GitHub:** November 23, 2025
+- **Deployment Status:** Successful (Build + Deploy completed)
+- **Live URL:** https://emilystat.github.io/projects/nsf-dms-2053668/
+
+### Impact:
+The NSF project page now accurately reflects:
+- The collaborative multi-institutional nature of the project (UC and Purdue)
+- Correct faculty titles and roles (PI vs Co-PI)
+- Current student roster including newest members (2024 cohort)
+- Professional recognition of title promotion (Professor)
+
+---
+
 ## Notes
 - Keep existing blog files intact, just hidden from navigation
 - Maintain jekyll-scholar plugin functionality
