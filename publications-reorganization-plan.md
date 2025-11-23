@@ -779,6 +779,98 @@ This project develops statistical methods and computational tools for inverse pr
 
 ---
 
+## NSF Project Page Team Section Update (Completed)
+
+**Date:** November 23, 2025
+
+### Objective:
+Complete the Team section on the NSF DMS-2053668 project page with full collaborator and student information, including affiliations and webpage links.
+
+### Changes Made:
+
+**File Modified:** `_pages/nsf-dms-2053668.md`
+
+**Section Updated:** Team (lines 86-104)
+
+### Team Section Structure:
+
+#### Principal Investigator:
+- Emily L. Kang, Associate Professor, Division of Statistics and Data Science, University of Cincinnati
+- Link to UC Division of Statistics and Data Science
+
+#### Collaborators (6 listed):
+1. **Bledar A. Konomi**
+   - Associate Professor, Division of Statistics and Data Science, University of Cincinnati
+   - Link: https://researchdirectory.uc.edu/p/konomibr
+
+2. **Amy Braverman**
+   - Principal Statistician, Jet Propulsion Laboratory, California Institute of Technology
+   - Link: https://dus.jpl.nasa.gov/home/braverman/
+
+3. **Jonathan Hobbs**
+   - Data Scientist, Jet Propulsion Laboratory, California Institute of Technology
+   - Link: https://dus.jpl.nasa.gov/home/hobbs/
+
+4. **Peter Kalmus**
+   - Data Scientist, Jet Propulsion Laboratory, NASA
+   - Link: https://higgs.jpl.nasa.gov/people/pkalmus/
+
+5. **Georgios Karagiannis**
+   - Associate Professor, Department of Mathematical Sciences, Durham University, UK
+   - Link: https://www.durham.ac.uk/staff/georgios-karagiannis/
+
+6. **Kerry Cawse-Nicholson**
+   - Scientist, Jet Propulsion Laboratory, NASA
+   - Link: https://science.jpl.nasa.gov/people/kcawseni/
+
+#### Students Supported (4 listed):
+1. **Ayesha Kumari Ekanayaka Katugoda Gedara**
+   - Ph.D. 2024, University of Cincinnati
+   - Current Position: Postdoctoral Fellow, UNC Chapel Hill
+   - Co-author on project publications (ekanayaka2025multivariate, ekanayaka2022statistical)
+
+2. **Rick Lucas**
+   - Ph.D. student (2021-present), University of Cincinnati
+   - Started when grant began (2021)
+
+3. **Eric Herrison Gyamfi**
+   - Ph.D. student (2022-present), University of Cincinnati
+
+4. **Hancheng Li**
+   - Ph.D. student (2022-present, Joint with B. A. Konomi), University of Cincinnati
+
+### Research Sources:
+Collaborator information gathered from:
+- Amy Braverman: JPL webpage, Google Scholar (Fellow of ASA, Principal Statistician, UQ expert)
+- Jon Hobbs: JPL webpage, Iowa State University news (Lew Allen Award winner, data scientist)
+- Bledar Konomi: UC Research Directory (Associate Professor, co-advisor)
+- Peter Kalmus: JPL/NASA webpage (Data scientist, climate science focus)
+- Georgios Karagiannis: Durham University (Associate Professor, Bayesian statistics)
+- Kerry Cawse-Nicholson: JPL Science webpage (ECOSTRESS mission lead, remote sensing)
+
+### Key Features:
+- **Complete affiliations** - Full titles and institutional affiliations for all collaborators
+- **Active webpage links** - All collaborators linked to their professional pages
+- **International collaboration** - Collaborators from UC (USA), JPL (USA), Durham (UK)
+- **Students tracked** - All students supported during grant period (2021-2025)
+- **Career progression** - Current position noted for graduated students
+
+### Deployment:
+- **Committed:** "Add complete Team section to NSF project page"
+- **Commit:** 01e69f52
+- **Pushed to GitHub:** November 23, 2025
+- **Deployment Status:** Successful (Build + Deploy completed)
+- **Live URL:** https://emilystat.github.io/projects/nsf-dms-2053668/
+
+### Impact:
+The NSF project page now provides complete information about the research team, making it easier for:
+- Potential collaborators to understand the team structure
+- Students to identify research group members
+- Funding agencies to see the collaborative nature of the work
+- Website visitors to learn about the breadth of expertise involved
+
+---
+
 ## Notes
 - Keep existing blog files intact, just hidden from navigation
 - Maintain jekyll-scholar plugin functionality
