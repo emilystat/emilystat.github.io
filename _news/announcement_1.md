@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Website is live and under development.
+Website is live! Welcome to my website.
