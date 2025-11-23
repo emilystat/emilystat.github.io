@@ -474,6 +474,62 @@ Removed separate "Manuscripts" and "Published Work" section headers from publica
 ### Result:
 All publications now appear in reverse chronological order (newest first) without section divisions. The bibliography automatically sorts by year, showing the most recent work at the top.
 
+## People Page Implementation (Completed)
+
+### Objective:
+Created a clean people page (`_pages/people.md`, permalink: `/people/`) showcasing:
+1. Current students (graduate and undergraduate)
+2. Past students with first positions and current positions (if known)
+3. Collaborators acknowledgment section
+
+### Implementation Details:
+
+#### File Created:
+- Location: `_pages/people.md`
+- Layout: `page` (simple markdown)
+- Permalink: `/people/`
+- Navigation: `nav: true`, `nav_order: 6`
+
+#### Structure Implemented:
+
+**Section 1: Current Students**
+- **Graduate Students (Ph.D.)**:
+  - Rick Lucas (2021-present, in candidacy)
+  - Eric Herrison Gyamfi (2022-present, before candidacy)
+  - Hancheng Li (Joint with B. A. Konomi, 2022-present, in candidacy)
+  - Ying Zhang (2024-present, before candidacy)
+- **Undergraduate Students**:
+  - Linh Tran (Fall 2025)
+
+**Section 2: Past Students**
+- **Ph.D. Graduates** (table with 4 columns):
+  - Name | Graduation Year | First Position | Current Position (if known)
+  - 9 graduates from 2017-2024, including:
+    - Most recent: Ayesha Kumari Ekanayaka Katugoda Gedara (2024) → Postdoctoral Fellow, UNC Chapel Hill
+    - Notable: Pulong Ma (2018) → now TTAP at Iowa State University
+- **Undergraduate Alumni**:
+  - Ruoqi Song (2020) → Ph.D. program in Biostatistics, The Ohio State University
+
+**Section 3: Collaborators**
+- Acknowledgment paragraph expressing gratitude for collaborations
+- No specific names listed (per user request to avoid incomplete list)
+- Contact email for collaboration inquiries: kangel@ucmail.uc.edu
+
+### Key Features:
+- **Clean formatting**: Simple markdown lists and tables
+- **Complete information**: All students from provided data properly organized
+- **Proper categorization**: Current vs. past students clearly separated
+- **Chronological order**: Past students listed from most recent to oldest
+- **Typos fixed**: "interested" and "Biostatistics" corrected
+- **LaTeX converted**: All `\item` and `\textit{}` formatting converted to markdown
+- **Joint advisorship noted**: Students co-advised with B. A. Konomi clearly indicated
+
+### Design Decisions:
+- **Simple markdown approach**: Easy maintenance, direct editing
+- **No specific collaborator names**: Avoids implicit ranking or incomplete representation
+- **Updated contact email**: kangel@ucmail.uc.edu (not OSU email)
+- **Four-column table for Ph.D. graduates**: Added "Current Position" column to track career progression
+
 ## Notes
 - Keep existing blog files intact, just hidden from navigation
 - Maintain jekyll-scholar plugin functionality
