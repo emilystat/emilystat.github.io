@@ -715,6 +715,70 @@ children:
 3. Copy organized content from draft file to `_pages/nsf-dms-2053668.md`
 4. Add future grants by creating new project pages and adding entries to landing page
 
+## Repository Configuration Update (Completed)
+
+**Date:** November 23, 2025
+
+### Objective:
+Fix repository name in repositories configuration and ensure input-dimension-reduction displays on repositories page.
+
+### Issue Identified:
+Repository name was using underscores instead of hyphens:
+- **Incorrect:** `emilystat/input_dimension_reduction`
+- **Correct:** `emilystat/input-dimension-reduction`
+
+### Changes Made:
+- **File:** `_data/repositories.yml`
+- **Line 8:** Changed `input_dimension_reduction` → `input-dimension-reduction`
+
+### Result:
+The input-dimension-reduction repository now displays correctly on the repositories page at https://emilystat.github.io/repositories/
+
+### Current Repository List:
+1. MFGP
+2. JointSurvivalDurationModeling
+3. Downscaling-demo
+4. AutoBasisFDA
+5. input-dimension-reduction
+
+---
+
+## NSF Project Page Overview Update (Completed)
+
+**Date:** November 23, 2025
+
+### Objective:
+Condense the NSF DMS-2053668 project overview to be concise instead of copying lengthy text from the NSF webpage.
+
+### Previous State:
+- 3 lengthy paragraphs (approximately 220 words)
+- Appeared to be copied directly from NSF abstract
+- Repetitive content across paragraphs
+
+### Changes Made:
+- **File:** `_pages/nsf-dms-2053668.md`
+- **Section:** Overview (lines 9-15)
+- **Result:** Condensed from 3 paragraphs to 2 concise sentences
+
+### New Overview Text:
+```markdown
+This project develops statistical methods and computational tools for inverse problems in high-dimensional systems, with applications to remote sensing and carbon monitoring. The research focuses on building scalable statistical emulators using joint dimension reduction for input and output spaces, enabling efficient uncertainty quantification for remote sensing data products.
+```
+
+### Rationale:
+1. **More concise** - 2 sentences instead of 3 paragraphs
+2. **Clearer focus** - Highlights key objectives and methods
+3. **Better user experience** - Readers get essential information quickly
+4. **Professional presentation** - Original content, not copy-pasted from NSF
+
+### Deployment:
+- **Committed:** "Fix repository name and condense NSF project overview"
+- **Commit:** 88b67ee7
+- **Pushed to GitHub:** November 23, 2025
+- **Live URL:** https://emilystat.github.io/projects/nsf-dms-2053668/
+
+---
+
 ## Notes
 - Keep existing blog files intact, just hidden from navigation
 - Maintain jekyll-scholar plugin functionality
