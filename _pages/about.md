@@ -38,3 +38,7 @@ My research focuses on statistical modeling and algorithms for data with complex
 - Bayesian Modeling
 - Machine Learning
 - Digital Twins (modeling & simulation)
+
+## Research Support
+
+My research has been supported by the National Science Foundation (DMS–2053668), NASA-ROSES grant NNH18ZDA001N-SLSCVC, Simons Foundation's Collaboration Award (#317298 and #712755), and the Taft Research Center at the University of Cincinnati.
