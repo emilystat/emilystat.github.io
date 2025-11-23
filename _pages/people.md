@@ -11,7 +11,7 @@ nav: false
 ### Graduate Students (Ph.D.)
 
 - **Rick Lucas** (2021-present, in candidacy)
-- **Eric Herrison Gyamfi** (2022-present, before candidacy)
+- **Eric Herrison Gyamfi** (2022-present, in candidacy)
 - **Hancheng Li** (Joint with B. A. Konomi, 2022-present, in candidacy)
 - **Ying Zhang** (2024-present, before candidacy)
 
@@ -25,7 +25,7 @@ nav: false
 
 ### Ph.D. Graduates
 
-| Name | Graduation Year | First Position | Current Position (if known) |
+| Name | Graduation Year | First Position | Current Position |
 |------|-----------------|----------------|----------------------------|
 | Ayesha Kumari Ekanayaka Katugoda Gedara | 2024 | Postdoctoral Fellow, UNC Chapel Hill | |
 | Tzu-Chun Wu | 2022 | Data Scientist, UC College of Medicine | |
@@ -39,7 +39,7 @@ nav: false
 
 ### Undergraduate Alumni
 
-| Name | Graduation Year | Current Position |
+| Name | Graduation Year | First Position |
 |------|-----------------|------------------|
 | Ruoqi Song | 2020 | Ph.D. program in Biostatistics, The Ohio State University |
 
