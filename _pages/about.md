@@ -41,4 +41,4 @@ My research focuses on statistical modeling and algorithms for data with complex
 
 ## Research Support
 
-My research has been supported by the National Science Foundation (DMS–2053668), NASA-ROSES grant NNH18ZDA001N-SLSCVC, Simons Foundation's Collaboration Award (#317298 and #712755), and the Taft Research Center at the University of Cincinnati.
+My research has been supported by the National Science Foundation (DMS–2053668), NASA-ROSES grants NNH18ZDA001N-SLSCVC and 80NM0018D0004 (NASA ROSES Sustaining Living Systems in a Time of Climate Variability and Change program, grant number 281945.02.03.09.34), Simons Foundation's Collaboration Award (#317298 and #712755), and the Taft Research Center at the University of Cincinnati.
