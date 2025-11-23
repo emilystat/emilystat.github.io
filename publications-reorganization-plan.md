@@ -530,6 +530,62 @@ Created a clean people page (`_pages/people.md`, permalink: `/people/`) showcasi
 - **Updated contact email**: kangel@ucmail.uc.edu (not OSU email)
 - **Four-column table for Ph.D. graduates**: Added "Current Position" column to track career progression
 
+### People Page Navigation Update (Final)
+
+**Date:** November 22, 2025
+
+**Objective:** Move people page from top-level navigation to Research dropdown menu only.
+
+**Changes Made:**
+- File: `_pages/people.md`
+- Changed: `nav: true` → `nav: false`
+- Removed: `nav_order: 6`
+
+**Result:**
+- People page NO LONGER appears in top-level navigation bar
+- People page ONLY appears in Research dropdown menu
+- Research dropdown already configured in `_pages/dropdown.md` with people as child item
+
+**Current Top Navigation (nav_order):**
+1. About (home)
+2. Publications
+3. CV
+4. Teaching
+5. Research (dropdown menu)
+   - people
+   - projects
+   - repositories
+
+**Rationale:**
+- Cleaner top navigation with fewer items
+- Logically groups people, projects, and repositories under Research category
+- Maintains accessibility while improving navigation organization
+
+**Implementation:**
+The Research dropdown is configured in `_pages/dropdown.md`:
+```yaml
+---
+layout: page
+title: research
+nav: true
+nav_order: 5
+dropdown: true
+children:
+  - title: people
+    permalink: /people/
+  - title: projects
+    permalink: /projects/
+  - title: repositories
+    permalink: /repositories/
+---
+```
+
+**Deployment:**
+- Committed: "Hide people page from top navigation, show only in Research dropdown"
+- Pushed to GitHub: Commit 40962b32
+- GitHub Actions deployment: Successful (Build: 1m21s, Deploy: 9s)
+- Live at: https://emilystat.github.io/
+
 ## Notes
 - Keep existing blog files intact, just hidden from navigation
 - Maintain jekyll-scholar plugin functionality
