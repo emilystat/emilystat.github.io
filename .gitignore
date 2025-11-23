@@ -12,3 +12,6 @@ node_modules/
 vendor
 .idea
 .venv
+
+# Local planning documents (not for public repo)
+publications-reorganization-plan.md
