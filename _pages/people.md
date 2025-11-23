@@ -3,8 +3,7 @@ layout: page
 permalink: /people/
 title: people
 description: Current and past students, and collaborators
-nav: true
-nav_order: 6
+nav: false
 ---
 
 ## Current Students
