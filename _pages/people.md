@@ -2,7 +2,7 @@
 layout: page
 permalink: /people/
 title: people
-description: Current and past students, and collaborators
+description: Current and former students, and collaborators
 nav: false
 ---
 
@@ -23,7 +23,7 @@ nav: false
 
 ---
 
-## Past Students
+## Former Students
 
 ### Ph.D. Graduates
 
