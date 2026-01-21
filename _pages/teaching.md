@@ -9,19 +9,19 @@ nav_order: 4
 
 ## Current Courses
 
-**Fall 2025**
+**Spring 2026**
 
-- **STAT 4131 - Regression Analysis and Statistical Learning** (Undergraduate)
-  [Course Website](https://uc.instructure.com) | [Syllabus (PDF)](/assets/pdf/STAT4131_Fall2025_syllabus.pdf){:target="_blank" rel="noopener noreferrer"}
+- **STAT 7024 - Linear Models II** (Graduate)
+  [Course Website](https://uc.instructure.com) | [Syllabus (PDF)](/assets/pdf/STAT7024_Spring2026_syllabus.pdf){:target="_blank" rel="noopener noreferrer"}
 
-- **STAT 5145/6045 - Statistical Computing** (Combined Undergraduate/Graduate)
-  [Course Website](https://uc.instructure.com) | [Syllabus (PDF)](/assets/pdf/STAT6045-5145-Fall2025-syllabus.pdf){:target="_blank" rel="noopener noreferrer"}
+- **STAT 5132/6032 - Design & Analysis of Experiments** (Combined Undergraduate/Graduate)
+  [Course Website](https://uc.instructure.com) | [Syllabus (PDF)](/assets/pdf/STAT5132_6032_Spring2026_syllabus.pdf){:target="_blank" rel="noopener noreferrer"}
 
 ## Past Courses
 
-- STAT 5132/6032 Design & Analysis of Experiments
+- STAT 4131 Regression Analysis and Statistical Learning
+- STAT 5145/6045 Statistical Computing
 - STAT 6031 Applied Regression Analysis
-- STAT 7024 Linear Models II
 - STAT 7020 Applied Spatial Statistics
 - STAT 8025 Spatial Statistics
 - STAT 7020 Applied Longitudinal Data Analysis
