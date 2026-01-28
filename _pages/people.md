@@ -14,7 +14,7 @@ nav: false
 - **Eric Herrison Gyamfi** (2022-present, in candidacy)
 - **Hancheng Li** (Joint with B. A. Konomi, 2022-present, in candidacy)
 - **Shixuan Wang** (2024-present, in candidacy)
-- **Ying Zhang** (2024-present, before candidacy)
+- **Ying Zhang** (2024-present, in candidacy)
 - **Lloyd Goldstein** (2024-present, before candidacy)
 
 ### Undergraduate Students
