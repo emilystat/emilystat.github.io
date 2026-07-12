@@ -10,16 +10,10 @@ nav: false
 
 ### Graduate Students (Ph.D.)
 
-- **Rick Lucas** (2021-present, in candidacy)
 - **Eric Herrison Gyamfi** (2022-present, in candidacy)
 - **Hancheng Li** (Joint with B. A. Konomi, 2022-present, in candidacy)
-- **Shixuan Wang** (2024-present, in candidacy)
 - **Ying Zhang** (2024-present, in candidacy)
 - **Lloyd Goldstein** (2024-present, before candidacy)
-
-### Undergraduate Students
-
-- **Linh Tran** (Fall 2025)
 
 ---
 
@@ -29,6 +23,8 @@ nav: false
 
 | Name | Graduation Year | First Position | Current Position |
 |------|-----------------|----------------|----------------------------|
+| Shixuan Wang | 2026 | Tenure-Track Assistant Professor, College of Charleston | |
+| Rick Lucas | 2026 | Team Lead -- Data Analytics and Industrial Engineering, Hy-Tek Intralogistics | |
 | Ayesha Kumari Ekanayaka Katugoda Gedara | 2024 | Postdoctoral Fellow, UNC Chapel Hill | |
 | Tzu-Chun Wu | 2022 | Data Scientist, UC College of Medicine | |
 | Jieyan Zhang | 2022 | BASF | |
@@ -45,6 +41,7 @@ nav: false
 
 | Name | Graduation Year | First Position |
 |------|-----------------|------------------|
+| Linh Tran | 2025 | |
 | Ruoqi Song | 2020 | Ph.D. program in Biostatistics, The Ohio State University |
 
 ---
