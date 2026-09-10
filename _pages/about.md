@@ -9,8 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><a href="https://www.artsci.uc.edu/natural-sciences/math/academic-programs/division-of-statistics-and-data-science.html">Division of Statistics and Data Science</a></p>
-    <p>Department of Mathematical Sciences</p>
+    <p><a href="https://www.artsci.uc.edu/natural-sciences/statistics-and-data-science.html">Department of Statistics and Data Science</a></p>
     <p>University of Cincinnati</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -27,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Professor of Statistics in the [Division of Statistics and Data Science](https://www.artsci.uc.edu/natural-sciences/math/academic-programs/division-of-statistics-and-data-science.html) within the Department of Mathematical Sciences at the University of Cincinnati. I received my [Ph.D. in Statistics](https://stat.osu.edu/) from [The Ohio State University](https://www.osu.edu/).
+I am a Professor of Statistics in the [Department of Statistics and Data Science](https://www.artsci.uc.edu/natural-sciences/statistics-and-data-science.html) at the University of Cincinnati. I received my [Ph.D. in Statistics](https://stat.osu.edu/) from [The Ohio State University](https://www.osu.edu/).
 
 My research focuses on statistical modeling and algorithms for data with complex dependence structures, Bayesian hierarchical modeling, uncertainty quantification, and principled methods motivated by real-world problems in remote sensing, engineering, and climate science.
 

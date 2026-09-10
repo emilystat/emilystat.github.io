@@ -13,7 +13,10 @@ nav: false
 - **Eric Herrison Gyamfi** (2022-present, in candidacy)
 - **Hancheng Li** (Joint with B. A. Konomi, 2022-present, in candidacy)
 - **Ying Zhang** (2024-present, in candidacy)
-- **Lloyd Goldstein** (2024-present, before candidacy)
+- **Lloyd Goldstein** (2025-present, before candidacy)
+- **Vilma Ofori** (2026-present, before candidacy)
+- **Quoc Nguyen** (2026-present, before candidacy)
+- **Tharushi Ranasinghe** (2026-present, before candidacy)
 
 ---
 
@@ -24,7 +27,7 @@ nav: false
 | Name | Graduation Year | First Position | Current Position |
 |------|-----------------|----------------|----------------------------|
 | Shixuan Wang | 2026 | Tenure-Track Assistant Professor, College of Charleston | |
-| Rick Lucas | 2026 | Team Lead -- Data Analytics and Industrial Engineering, Hy-Tek Intralogistics | |
+| Rick Lucas | 2026 |  | Team Lead -- Data Analytics and Industrial Engineering, Hy-Tek Intralogistics |
 | Ayesha Kumari Ekanayaka Katugoda Gedara | 2024 | Postdoctoral Fellow, UNC Chapel Hill | |
 | Tzu-Chun Wu | 2022 | Data Scientist, UC College of Medicine | |
 | Jieyan Zhang | 2022 | BASF | |
